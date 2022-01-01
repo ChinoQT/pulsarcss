@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PulsarCSS | Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="PulsarCSS | Text Portrait Generator"/>
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/915290786080387072/915311147664687164/unknown.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:description" content="A simple generator that turns your image into a text portrait."/>
+    <link href="style.css" rel="stylesheet">
+    <script src="mainpagJS.js"></script>
+    <link href="https://cdn.discordapp.com/attachments/407201002606034954/915231678987907102/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <!--__NAVBAR / HEADER__-->
+
+    <!--Navigation Bar Top-->
+    <div class="headerr">
+        <div class="navbarTOP">
+            <a href="https://dcpasscodepulsar.000webhostapp.com" target="_blank">Discord</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <!--Header Picture and Logo-->
+        <div class="headingYES">
+            <img class="csslogo"
+                src="https://cdn.discordapp.com/attachments/912296573969522711/912604826087616542/CSS3_logo_and_wordmark.svg.png">
+        </div>
+        <!--__Navigation Bar Bottom__-->
+        <div class="navbarBOTTOM">
+            <a id="refresh" onclick="refreshh()" href="">a simple CSS text portrait maker for you</a>
+        </div>
+    </div>
+
+
+    <!--CONTENT AREA-->
+
+    <div class="contentt">
+        <!-- __Content Container__-->
+
+        <!--Instruction Section-->
+        <div class="introduction" id="intro">
+            <h2>Instructions:</h2>
+            <p>- Copy and paste your text in the big field. (Paste atleast thrice if your text is too short)
+                <br>- Paste your image via link <span class="panuto">(Make sure the link is valid e.g Imgur, Direct Image Link)</span>.
+                <br>- Click generate then SCROLL DOWN! to see your portrait.
+            </p>
+            <h4>Quick Tip:</h4>
+            <p> - Using a bigger screen will give your image a better look :D <br>
+                - Avoid text with more than 1 space between to prevent bad image output :D<br>
+            </p>
+        </div>
+
+        <div class="generatorCONT" id="inputna">
+            <div class="gencont">
+                <h2>Interact Below To Start Generating!</h2>
+                <h6>Made by Pulsar :D with pagmamahal <3 </h6>
+            </div>
+            <div class="inputDIV">
+                <label for="para">Paste your text in the field below:</label> <br><br>
+                <textarea type="text" id="pasteTXT" maxlength="30000" value="Yes"></textarea> <br> <br>
+                <label for="linkk">Paste your image via <span class="linktxt">[LINK]</span> below:</label> <br> <br>
+                <input type="url" id="urlPASTE"><br>
+                 <small>File Upload Coming Soon...<br>(When school is done)</small> <br>
+            </div>
+            <div class="checkybox" id="checkoy">
+                <label for="checkbox">Turn on Greyscale?</label> <br>
+                <input type="checkbox" id="checkbox" onclick="greyscaling()">
+            </div>
+
+            <!--Background settings-->
+            <div class="radiobtn">
+                <div class="cov">
+                    <input type="radio" id="bgCOVER" name="radiobtnnm" value="COVER" onclick="backgroundfunc()">
+                    <label for="BGcover">Background Cover</label>
+                </div>
+                <div class="aut">
+                    <input type="radio" id="bgAUTO" name="radiobtnnm" value="AUTO" onclick="backgroundfunc()">
+                    <label for="BGauto">Background Auto</label>
+                </div>
+                <div class="cont">
+
+                    <input type="radio" id="bgCONTAIN" name="radiobtnnm" value="CONTAIN" onclick="backgroundfunc()">
+                    <label for="BGcontain">Background Contain</label>
+                </div>
+            </div>
+
+            <div class="generate">
+                <a href="#outputjs">
+                <button onclick="GenerateIMAGE()">Generate</button>
+                </a>
+            </div> <br>
+            <div class="generate2">
+                <a href="#Inputna" onclick="refreshh()" id="yessir">Reset</a>
+            </div>
+
+        </div>
+
+    </div> <!-- End of Content AREA-->
+
+
+    <!--__Output Container__-->
+    <div class="Output" id="outputcontainer">
+        <p id="outputjs">
+        </p>
+    </div>
+
+
+</body>
+
+<!-- FOOTER-->
+<footer id="Footer">
+    <small>&copy; 2021 GypsyPulsar. All rights reserved.</small>
+</footer>
+
+</html>
